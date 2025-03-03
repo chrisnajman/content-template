@@ -1,4 +1,4 @@
-# Content `template`
+# Content `<template>`
 
 The HTML `<template>` tag allows developers to define reusable HTML structures that are not immediately rendered on the page. In this project, JavaScript clones the contents of the `<template>` tag and dynamically inserts user data into the DOM, making it an efficient way to generate multiple elements without unnecessary reflows.
 
