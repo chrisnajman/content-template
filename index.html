@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Output a list of items from a JSON file using the html template tag and associated JavaScript">
+    <title>Content &lt;Template&gt;</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js" type="module"></script>
+</head>
+
+<body class="flow">
+    <a href="#main-content" class="element-invisible element-focusable skip-link">Skip to main content</a>
+
+    <div class="theme-toggler">
+        <p class="light">Light<span class="visually-hidden"> theme inactive</span></p><button type="button"
+            aria-pressed="true" aria-label="Toggle theme"><span></span></button>
+        <p class="dark">Dark<span class="visually-hidden"> theme active</span></p>
+    </div>
+
+    <header class="header">
+        <h1>Content <code>&lt;Template&gt;</code></h1>
+    </header>
+
+    <main class="main container" id="main-content">
+
+        <h2>Users</h2>
+        <ul id="list-container" class="list"></ul>
+
+        <template id="template">
+            <li data-item>
+                <ul>
+                    <li><b>ID</b>: <span data-id></span></li>
+                    <li><b>Name</b>: <span data-name></span></li>
+                    <li><b>Username</b>: <span data-username></span></li>
+                    <li><b>Email</b>: <span data-email></span></li>
+                    <li><b>Address</b>:
+                        <ul>
+                            <li><b>Street</b>: <span data-address-street></span></li>
+                            <li><b>Suite</b>: <span data-address-suite></span></li>
+                            <li><b>City</b>: <span data-address-city></span></li>
+                            <li><b>Zipcode</b>: <span data-address-zipcode></span></li>
+                            <li><b>Location</b>:
+                                <ul>
+                                    <li><b>Lat</b>: <span data-address-location-lat></span></li>
+                                    <li><b>Lng</b>: <span data-address-location-lng></span></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><b>Phone</b>: <span data-phone></span></li>
+                    <li><b>Website</b>: <span data-website></span></li>
+                    <li><b>Company</b>:
+                        <ul>
+                            <li><b>Name</b>: <span data-company-name></span></li>
+                            <li><b>Catchphrase</b>: <span data-company-catchphrase></span></li>
+                            <li><b>Keywords</b>: <span data-company-keywords></span></li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+            </li>
+        </template>
+
+    </main>
+
+    <footer class="footer">
+        <a href="https://github.com/chrisnajman/content-template" target="_blank" rel="noopener noreferrer"
+            class="external-link">
+            GitHub Repository
+        </a>
+    </footer>
+
+
+
+
+
+</body>
+
+</html>
