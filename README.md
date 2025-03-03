@@ -28,12 +28,6 @@ The JavaScript has been split into separate modules, improving code modularity:
 
 ---
 
-## JSON
-
-The **JSON** is sourced from [https://jsonplaceholder.typicode.com/users](https://jsonplaceholder.typicode.com/users)
-
----
-
 ## Theme Toggling
 
 The application includes a dark mode and light mode toggle:
